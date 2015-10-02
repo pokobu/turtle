@@ -1,0 +1,17 @@
+import turtle
+import random as r
+import color as c
+matthew = turtle.Pen()
+colors_ = list(colors.cnames)
+print colors_[7]
+for i in range(20):
+    j= r.randint(0,146)
+    if(j>70):
+        matthew.right(j)
+    else:
+        matthew.left(j)
+    #print j
+    matthew.color(colors_[j])
+    matthew.forward(j)
+    matthew.circle(j)
+        
